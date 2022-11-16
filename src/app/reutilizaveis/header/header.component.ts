@@ -12,4 +12,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  verPerfil: boolean = false
+
+  abrirModalPerfil() {
+    this.verPerfil = !this.verPerfil
+  }
+
 }

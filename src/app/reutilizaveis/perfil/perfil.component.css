@@ -1,13 +1,17 @@
+* {
+    margin: 0;
+}
+
 #modalUser {
-    max-width: 32%;
-    max-height: 20%;
     background-color: #F9F6F6;
+    border-radius: 10px;
     box-shadow: 10px 5px 5px #0000;
+    position: fixed;
 }
 
 #containerModal {
     justify-content: center;
-    padding: 15px 20px 0 20px;
+    padding: 15px 20px;
 }
 
 #imagemUser {
@@ -42,8 +46,12 @@
     margin-top: 2%;
 }
 
-#containerSair {
+#containerSair, #iconeSair {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#containerSair {
+    margin: 5% 0;
 }

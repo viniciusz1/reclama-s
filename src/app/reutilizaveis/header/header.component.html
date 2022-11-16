@@ -13,8 +13,11 @@
       <div>
           SOBRE
       </div>
-      <span class="material-symbols-outlined">
-          person
-      </span>
+      <div id="iconPessoa" (click)="abrirModalPerfil()">
+          <span class="material-symbols-outlined">
+              person
+          </span>
+      </div>
   </div>
+  <app-perfil *ngIf="verPerfil" style="position: fixed; right: 20rem; top: 5%;"></app-perfil>
 </header>
