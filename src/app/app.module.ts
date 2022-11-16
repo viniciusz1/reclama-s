@@ -2,21 +2,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { BotaoComponent } from './main/botao/botao.component';
-import { LinhaComponent } from './main/linha/linha.component';
-import { VisorComponent } from './main/visor/visor.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    BotaoComponent,
-    LinhaComponent,
-    VisorComponent
+    HomeComponent,
+    LoginComponent,
+    AgendaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: LoginComponent
+      },{
+        path: 'home',
+        component: HomeComponent
+      },{
+        path: 'agenda',
+        component: AgendaComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
