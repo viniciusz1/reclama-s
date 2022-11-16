@@ -1,0 +1,12 @@
+*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    height: 30px;
+}
+div{
+    height: 19px;
+    width: 92px;
+    border: solid black 2px;
+}
