@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     CommonModule
   ],
-  declarations: [MensagemComponent, PerfilComponent, ModalReclamacaoComponent, ModalAvisosComponent, ModalNovoEventoComponent, HeaderComponent]
+  declarations: [MensagemComponent, PerfilComponent, ModalReclamacaoComponent, ModalAvisosComponent, ModalNovoEventoComponent, HeaderComponent],
+  exports: [MensagemComponent, PerfilComponent, ModalReclamacaoComponent, ModalAvisosComponent, ModalNovoEventoComponent, HeaderComponent]
 })
 export class ReutilizaveisModule { }

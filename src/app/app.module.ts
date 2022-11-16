@@ -1,3 +1,4 @@
+import { ReutilizaveisModule } from './reutilizaveis/reutilizaveis.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    ReutilizaveisModule,
     RouterModule.forRoot([
       {
         path: '',
