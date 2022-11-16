@@ -1,40 +1,42 @@
 <app-header></app-header>
+<div *ngIf="fundoPretoModais" id="fundoPretoModais">
+    <app-modal-reclamacao style="display: flex; justify-content: center; margin-top: 8%;"></app-modal-reclamacao>
+</div>
 <main class="mx-5">
-    <div *ngIf="fundoPretoModais" id="fundoPretoModais">
-        <app-modal-reclamacao style="display: flex; justify-content: center; margin-top: 8%;"></app-modal-reclamacao>
-    </div>
-    <div class="mb-4">
-        <button class="btn btn-primary">Reclame aqui!</button>
-        <button class="btn btn-outline-primary ms-2">Avise aqui!</button>
-    </div>
-    <div style="display: flex;">
-        <div class="container container-msg rounded" style="overflow:auto; max-height: 70vh">
-            <div class="barra-ordenacao d-flex justify-content-end mb-5 mt-3 p-2 rounded w-100">
-                <div class="">Ordenar</div>
-                <span class="material-symbols-outlined">
-                    expand_more
-                    </span>
-            </div>
-            <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
-            <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
-            <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
-            <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
-            <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
+    <div id="tudo">
+        <div class="mb-4">
+            <button class="btn btn-primary" (click)="abrirModalReclamacoes()">Reclame aqui!</button>
+            <button class="btn btn-outline-primary ms-2">Avise aqui!</button>
         </div>
-        <div class="rounded p-4 d-flex flex-column justify-content-between ms-3" style="border: 1px solid rgb(163, 163, 163); width:25%; height: 70vh;">
-            <div>
-                <h4>Filtrar Reclamações</h4>
-                <select name="" id="" class="form-control mb-2">
-                    <option>Cargo</option>
-                </select>
-                <select name="" id="" class="form-control mb-2">
-                    <option>Cargo</option>
-                </select>
-                <select name="" id="" class="form-control mb-2">
-                    <option>Cargo</option>
-                </select>
+        <div style="display: flex;">
+            <div class="container container-msg rounded" style="overflow:auto; max-height: 70vh">
+                <div class="barra-ordenacao d-flex justify-content-end mb-5 mt-3 p-2 rounded w-100">
+                    <div class="">Ordenar</div>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                        </span>
+                </div>
+                <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
+                <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
+                <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
+                <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
+                <app-mensagem style="width: 90%" class="mb-5"></app-mensagem>
             </div>
-            <button class="btn btn-primary">Buscar</button>
+            <div class="rounded p-4 d-flex flex-column justify-content-between ms-3" style="border: 1px solid rgb(163, 163, 163); width:25%; height: 70vh;">
+                <div>
+                    <h4>Filtrar Reclamações</h4>
+                    <select name="" id="" class="form-control mb-2">
+                        <option>Cargo</option>
+                    </select>
+                    <select name="" id="" class="form-control mb-2">
+                        <option>Cargo</option>
+                    </select>
+                    <select name="" id="" class="form-control mb-2">
+                        <option>Cargo</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Buscar</button>
+            </div>
         </div>
     </div>
 </main>
