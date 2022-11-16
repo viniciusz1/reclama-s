@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+.topo {
+    display: flex;
+    background-color: #0047B6;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 30px
+}
+
+.texto {
+    display: flex;
+    color: white;
+    column-gap: 50px;
+}
+
+img {
+    height: 45px;
+    width: 151px;
+
+}
