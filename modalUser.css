@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: end;
+}
+
+#modalUser {
+    max-width: 32%;
+    max-height: 20%;
+    background-color: #F9F6F6;
+    box-shadow: 10px 5px 5px #0000;
+}
+
+#containerModal {
+    justify-content: center;
+    padding: 15px 20px 0 20px;
+}
+
+#imagemUser {
+    display: flex;
+    justify-content: center;
+}
+
+#imagem {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #0047B6;
+}
+
+#conteudo {
+    margin-top: 5%;
+}
+
+#nomeUser, #emailUser {
+    display: flex;
+    justify-content: center;
+}
+
+#nomeUser {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#emailUser {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.568);
+    margin-top: 2%;
+}
+
+#containerSair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
