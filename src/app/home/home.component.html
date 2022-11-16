@@ -1,30 +1,21 @@
 <app-header></app-header>
-<main style="margin-top: 20px;">
-  <div>
-      <button class="btn btn-primary">Reclame aqui!</button>
-      <button class="btn btn-primary">Avise aqui!</button>
-  </div>
-  <div style="display: flex;">
-      <div style="border: 1px solid black; width:75%; height: 70vh; margin: 40px;">
-          <div class="barra-ordenacao">
-              <div class="">Ordenar</div>
-          </div>
-          <div>
-              <h6>Sobre: Vanessa da Silva</h6>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through, ical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure 
-              </p>
+<main style="margin-top: 20px;" class="mx-5">
+    <div>
+        <button class="btn btn-primary">Reclame aqui!</button>
+        <button class="btn btn-primary">Avise aqui!</button>
+    </div>
+    <div style="display: flex;">
+        <div class="container container-msg">
+            <div class="barra-ordenacao mb-5">
+                <div class="">Ordenar</div>
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+            </div>
+            <app-mensagem style="width: 90%"></app-mensagem>
+        </div>
+        <div style="border: 1px solid black; width:25%; height: 70vh; margin: 40px;">
 
-              <small>Comentários</small>
-              <div>
-                  like
-              </div>
-              <div>
-                  deslike
-              </div>
-          </div>
-      </div>
-      <div style="border: 1px solid black; width:25%; height: 70vh; margin: 40px;">
-
-      </div>
-  </div>
+        </div>
+    </div>
 </main>
