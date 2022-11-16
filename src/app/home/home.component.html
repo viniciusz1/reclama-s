@@ -1,7 +1,10 @@
 <app-header></app-header>
-<main style="margin-top: 20px;">
+<main>
+    <div *ngIf="fundoPretoModais" id="fundoPretoModais">
+        <app-modal-reclamacao style="display: flex; justify-content: center; margin-top: 8%;"></app-modal-reclamacao>
+    </div>
   <div>
-      <button class="btn btn-primary">Reclame aqui!</button>
+      <button class="btn btn-primary" (click)="abrirModalReclamacoes()">Reclame aqui!</button>
       <button class="btn btn-primary">Avise aqui!</button>
   </div>
   <div style="display: flex;">

@@ -1,3 +1,50 @@
-<p>
-  modal-reclamacao works!
-</p>
+<div id="modalReclamacoes">
+  <div id="containerReclamacoes">
+    <div id="topoModal">
+      <span class="material-symbols-outlined">
+        close
+      </span>
+    </div>
+    <div id="tituloReclamacoes">
+      <h1>Reclamação</h1>
+    </div>
+    <div id="containerInput">
+      <textarea name="reclamacoes" id="inputReclamacoes" cols="40" rows="9" placeholder="Digite aqui a sua reclamação..."></textarea>
+    </div>
+    <div id="containerSobreQuem">
+      <div style="width: 75%;">
+        <div id="textoSobreQuem">
+          Sobre quem:
+        </div>
+        <div id="linhaAbaixoTexto">
+          <div id="selectPessoa">
+            <select name="funcionarios" id="funcionarios">
+              <option value="funcionarios">Vanessa</option>
+              <option value="funcionarios">Elvis</option>
+              <option value="funcionarios">Joissiane</option>
+              <option value="funcionarios">Jackeline</option>
+              <option value="funcionarios">Gabiec</option>
+              <option value="funcionarios">Edimara</option>
+              <option value="funcionarios">Cintia</option>
+            </select>
+          </div>
+          <div id="iconAddImagem">
+            <span class="material-symbols-outlined">
+              add_photo_alternate
+            </span>
+          </div>
+        </div>
+        <div id="linhaDeixarAnonimo">
+          <input type="checkbox" name="checkAnonimo" id="checkAnonimo">
+          <label value="checkAnonimo">Deseja reclamação anônima?</label>
+          <span class="material-symbols-outlined">
+            help
+          </span>
+        </div>
+        <div id="botaoReclamar">
+          <button id="buttonReclamar">Reclamar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

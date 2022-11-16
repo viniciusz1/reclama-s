@@ -12,4 +12,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  fundoPretoModais: boolean = false;
+
+  abrirModalReclamacoes() {
+    this.fundoPretoModais = !this.fundoPretoModais
+  }
+
 }
