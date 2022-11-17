@@ -7,6 +7,11 @@
     justify-content: center;
 }
 
+.btn:hover {
+    background-color: #003a97;
+    color: #FFF;
+}
+
 #tudo {
   margin-top: 2%;
 }
