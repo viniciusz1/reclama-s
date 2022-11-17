@@ -1,7 +1,7 @@
 <div id="modalReclamacoes">
   <div id="containerReclamacoes">
     <div id="topoModal">
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined" (click)="fecharModalReclamacao('reclamacao')">
         close
       </span>
     </div>
@@ -37,7 +37,7 @@
         <div id="linhaDeixarAnonimo">
           <input type="checkbox" name="checkAnonimo" id="checkAnonimo">
           <label value="checkAnonimo">Deseja reclamação anônima?</label>
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" title="Essa opção deixará sua reclamção anonima para professores e alunos, mas não para administradores/orientadores!">
             help
           </span>
         </div>

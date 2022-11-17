@@ -61,6 +61,13 @@ span {
 #selectPessoa {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+#funcionarios {
+    outline: none;
+    width: 10rem;
+    cursor: pointer;
 }
 
 #iconAddImagem {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-modal-reclamacao',
@@ -12,4 +12,9 @@ export class ModalReclamacaoComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Output() fecharModal = new EventEmitter<string>();
+
+  fecharModalReclamacao(texto: string) {
+    this.fecharModal.emit(texto);
+  }
 }
